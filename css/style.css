@@ -1,34 +1,19 @@
 .navToggle {
   display:none;
-  position: absolute;
-  right:10px;
-  top:15px;
+  float:right;
   width:30px;
-  height:20px;
   border: 1px solid #ddd;
   border-radius:4px;
   padding:10px;
 }
 
-.navToggle__child {
-  position: relative;
-}
 .barg {
-  display: block;
-  position: absolute;
+  float:right;
   width: 100%;
   border-bottom:solid 2px #ddd;
+  margin-top:3px;
 }
 
-.barg:nth-child(1) {
-  top:5px;
-}
-.barg:nth-child(2) {
-  top:10px;
-}
-.barg:nth-child(3) {
-  top:15px;
-}
 /*上HTML追加部分*/
 
 body {
@@ -243,17 +228,14 @@ header {
 .section__bottom__parent {
   display:flex;
   justify-content: center;
-}
-
-.section__bottom__parent,
-.section__bottom__child {
   flex: none;
   text-align: center;
+  overflow: hidden;
+  margin: 0 auto;
 }
 
 .section__bottom__child {
   margin-left:180px;
-  float:left;
 }
 
 .section__bottom__child:first-child {
@@ -333,7 +315,7 @@ header {
   .section__child {
     float:none;
     margin:0 auto;
-    text-align: center;
+    /*text-align:center;*/
     display:block;
   }
   
@@ -344,6 +326,7 @@ header {
   .section__parent {
     text-align: center;
     margin-bottom: 0;
+    display: table;
   }
 
   .section-message {
@@ -364,11 +347,6 @@ header {
     margin-top:40px;
     float:none;
   }
-  
-  .section__bottom__wrapper {
-    padding-bottom:0;
-  }
-
   .section__bottom__parent,
   .section__bottom__child {
     float:none;
@@ -376,14 +354,12 @@ header {
     display: block;
   }
 
-  .fig__img {
+  .section__bottom__child {
     margin-bottom:88px;
   }
-
-  .sns__link {
-    box-sizing: border-box;
-    width:185px;
-  }
+  
+  .section__bottom__child:last-child {
+    margin-bottom:0;
 }
 
 @media(max-width:766px) {
@@ -391,31 +367,27 @@ header {
     display: none;
   }
   
-  .main-visual{
+  .main-visual {
     padding: 160px 0 130px 0;
   }
   
-  .container__theme{
+  .container__theme {
     font-size:80px;
   }
   
-  .sns__contents__inner{
+  .sns__contents__inner {
     padding:50px 0;
   }
-  .inner{
-    width:97%;
-  }
-  
   .sns__link {
     box-sizing: border-box;
     margin:0 15px 0 15px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
   }
-  .section__btn{
-    margin:0 auto;
-    text-align: center;
-    float:none;
-  }
-  .fa-bars{
+
+  .fa-bars {
     padding:10px;
     border:1px solid #ddd;
     border-radius:4px;
