@@ -1,17 +1,17 @@
 .navToggle {
-  display:none;
-  float:right;
-  width:30px;
   border: 1px solid #ddd;
   border-radius:4px;
+  display:none;
+  float:right;
   padding:10px;
+  width:30px;
 }
 
 .barg {
-  float:right;
-  width: 100%;
   border-bottom:solid 2px #ddd;
+  float:right;
   margin-top:3px;
+  width: 100%;
 }
 
 /*上HTML追加部分*/
@@ -25,9 +25,9 @@ body {
 }
 
 .clearfix:after {
-  display: block;
   content:"";
-  clear: both;  
+  clear: both; 
+  display: block;
 }
 
 .inner {
@@ -48,19 +48,19 @@ main {
 }
 
 header {
-  position:fixed;
-  width:100%;
   box-sizing: border-box;
   background-color: #fff;
-  padding:15px 0;
   margin:0 auto;
+  padding:15px 0;
+  position:fixed;
   text-align: center;
+  width:100%;
   z-index:10;
 }
 
 .header-left {
-  text-align:center;
   float:left;
+  text-align:center;
   text-align: center;
 }
 
@@ -78,15 +78,15 @@ header {
 }
 
 .header-left {
-  float:left;
   color:#4e4e4e;
+  float:left;
   font-size:40px;
 }
 
 .main-visual {
   background-color: #f2f2f2;
-  text-align: center;
   padding:250px 0 250px 0;
+  text-align: center;
 }
 
 .sub-visual {
@@ -95,23 +95,23 @@ header {
 
 .main-middle {
   background-color:#74cfae;
-  width:100%;
   padding-top:50px;
+  width:100%;
 }
 
 .sub-visual__left {
   float:left;
-  width:320px;
-  text-align:right;
   margin-right:30px;
+  text-align:right;
+  width:320px;
 }
 
 .sub-visual__right {
-  float:right;
   color:#fff;
+  float:right;
+  margin-top:20px;
   text-align:center;
   width:750px;
-  margin-top:20px;
 }
 
 .sub-visual__top {
@@ -129,40 +129,40 @@ header {
   color: #74cfae;
   font-size:90px;
   font-weight: 700;
-  text-align: center;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .container__sub__theme {
-  font-size:30px;
   color: #c0c0c0;
+  font-size:30px;
 }
 
 .section__wrapper {
-  width: 100%;
   background-color: #f2f2f2;
   box-sizing: border-box;
-  padding-bottom: 70px;
   font-size:24px;
+  padding-bottom: 70px;
   padding-top:60px;
+  width: 100%;
 }
 
 .section_title {
-  text-align: center;
   color:#333;
   margin-bottom:40px;
+  text-align: center;
 }
 
 .section__parent {
-  overflow: hidden;
   margin: 0 auto;
   margin-bottom:50px;
+  overflow: hidden;
 }
 
 .section__child {
+  display:flex;
   float:left;
   margin:80px 100px 0 0;
-  display:flex;
   opacity: 0.7;
   transition: .3s;
 }
@@ -185,20 +185,20 @@ header {
 }
 
 .section__message {
-  text-align: center;
   float:left;
   font-size: 20px;
-  width:650px;
   margin-left:80px;
+  text-align: center;
+  width:650px;
 }
 
 .section__btn {
-  padding:14px 20px;
+  background-color: #74cfae;
+  color:#fff;
   float:left;
   font-size: 12px;
-  color:#fff;
-  background-color: #74cfae;
   margin-left:90px;
+  padding:14px 20px;
   transition:.3s;
 }
 
@@ -207,28 +207,22 @@ header {
 }
 
 .section__bottom__wrapper {
-  width: 100%;
   background-color: #4e4e4e;
   box-sizing: border-box;
   padding:70px 0 100px 0;
+  width: 100%;
 }
 
 .section__bottom__title {
   color:#f2f2f2;
-  padding-bottom: 70px;
-  text-align: center;
   font-size:24px;
-}
-
-.section__bottom__parent {
-  overflow: hidden;
-  margin: 0 auto;
+  margin-bottom: 70px;
+  text-align: center;
 }
 
 .section__bottom__parent {
   display:flex;
   justify-content: center;
-  flex: none;
   text-align: center;
   overflow: hidden;
   margin: 0 auto;
@@ -315,17 +309,19 @@ header {
   .section__child {
     float:none;
     margin:0 auto;
-    /*text-align:center;*/
     display:block;
   }
   
   .section__child:nth-child(3n) {
     margin-bottom:80px;
   }
+  .section__child:last-child {
+    margin-bottom:0;
+  }
   
   .section__parent {
     text-align: center;
-    margin-bottom: 0;
+    margin-bottom: 80px;
     display: table;
   }
 
@@ -347,20 +343,22 @@ header {
     margin-top:40px;
     float:none;
   }
-  .section__bottom__parent,
-  .section__bottom__child {
-    float:none;
+  .section__bottom__parent{
+    display:block;
     margin-left:0;
-    display: block;
   }
-
   .section__bottom__child {
+    display: block;
+    margin-left: 0;
     margin-bottom:88px;
   }
   
   .section__bottom__child:last-child {
     margin-bottom:0;
+  }
 }
+
+
 
 @media(max-width:766px) {
   .header-right-icon{
