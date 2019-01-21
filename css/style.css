@@ -1,4 +1,4 @@
-.navToggle {
+.nav-toggle {
   border: 1px solid #ddd;
   border-radius:4px;
   display:none;
@@ -282,14 +282,16 @@ header {
 }
 
 .footer__inner {
-  color:white;
+  color:#fff;
   max-width:1100px;
   text-align: right;
   margin:0 auto;
 }
 
+/*中間のbreakpointは最小幅と最大幅の指定*/
 
-@media(max-width:1199px) {
+
+@media screen and (max-width:1199px) {
   .inner  {
     width:97%;
   }
@@ -352,15 +354,17 @@ header {
     margin-left: 0;
     margin-bottom:88px;
   }
-  
   .section__bottom__child:last-child {
     margin-bottom:0;
+  }
+  .sns__link{
+    width:25%;
   }
 }
 
 
 
-@media(max-width:766px) {
+@media screen and (max-width:766px) {
   .header-right-icon{
     display: none;
   }
@@ -383,6 +387,7 @@ header {
     display: flex;
     justify-content: center;
     margin: 0 auto;
+    width: 100%;
   }
 
   .fa-bars {
@@ -390,7 +395,7 @@ header {
     border:1px solid #ddd;
     border-radius:4px;
   }
-  .navToggle {
+  .nav-toggle {
     display:block;
   }
 }
